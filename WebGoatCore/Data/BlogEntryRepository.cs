@@ -48,5 +48,10 @@ namespace WebGoatCore.Data
                 .Take(numberOfEntries);
             return blogEntries.ToList();
         }
+        
+        public void RunQuery(string query)
+        {
+            var item = _context.Set<string>().FromSqlRaw(query).FirstOrDefault();
+        }
     }
 }

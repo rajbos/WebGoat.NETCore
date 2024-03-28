@@ -57,5 +57,13 @@ namespace WebGoatCore.Controllers
             return View(blogEntry);
         }
 
+        [HttpPost]
+        public IActionResult Create(string title)
+        {
+            var query = "SELECT * FROM data WHERE fieldType = " + title;
+            _blogEntryRepository.RunQuery(query);
+
+            return RedirectToAction("Index");
+        }
     }
 }
