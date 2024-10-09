@@ -9,6 +9,7 @@ This results in GHAS/GHAzDo are that:
 - Vulnerable dependencies are detected
 - Code scanning detects vulnerability patters in the code
 - Secrets are found in the repo
+- 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
 
 ## The next generation of the WebGoat example project to demonstrate OWASP TOP 10 vulnerabilities
 
